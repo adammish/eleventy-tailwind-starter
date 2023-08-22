@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{ title | default: "Site title" }}</title>
+  </head>
+  <body class="flex h-screen flex-col">
+    <header class="bg-gray-200 py-2">
+      <div class="container mx-auto px-4">
+        <h1 class="text-xl">{{ title | default: "New site" }}</h1>
+      </div>
+    </header>
+    <main class="container mx-auto mt-4 flex-grow px-4">{{ content }}</main>
+    <footer class="bg-gray-200 py-2 text-center">Footer</footer>
+  </body>
+</html>
